@@ -50,7 +50,7 @@ const questions = [
         type: "checkbox",
         name: "license",
         message: "Please select a license.",
-        choices: ["Apache 2.0", "GNU General Public v3.0", "MIT", "BSD 2-Clause", "BSD 3-Clause", "Boost", "Creative Commons Zero", "Eclipse Public", "GNU Affero", "GNU General", "GNU Lesser", "Mozilla", "The Unlicense","none"],
+        choices: ["Apache 2.0", "GNU General Public v3.0", "MIT", "BSD 2-Clause", "BSD 3-Clause", "Boost", "Eclipse Public", "GNU General", "GNU Lesser", "Mozilla", "The Unlicense","none"],
       },
       {
         type: "input",
