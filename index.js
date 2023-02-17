@@ -7,29 +7,24 @@ const generateMarkdown = require("./utils/generateMarkdown");
 const questions = [
     {
         type: 'input',
-        name: 'Title',
-        message: 'What is your project Name',
+        name: 'title',
+        message: 'What is your project Name?',
       },
       {
         type: 'input',
-        name: 'Description',
-        message: 'Project description. What is the purpose of this project',
+        name: 'description',
+        message: 'Project description. What is the purpose of this project?',
       },
 
       {
         type: "input",
         name: "features",
-        message: "Please list features here.",
+        message: "Please list project features here.",
       },
-    //   {
-    //     type: "checkbox",
-    //     name: "Technologies Used",
-    //     message: ["HTML", "CSS", "Bootstrap", "JavaScript", "JQuary", "Node", "React"],
-    //   },
       {
         type: "input",
-        name: "Technologies Used",
-        message: "Please list technologies used in your project. Eg HTML",
+        name: "technologiesUsed",
+        message: "Please list technologies used in your project.",
       },
       {
         type: "input",
@@ -38,12 +33,12 @@ const questions = [
       },
       {
         type: "input",
-        name: "Deployed Page",
-        message: "Please provide a link to your deployed site "
+        name: "deployedPage",
+        message: "Please provide a link to your deployed site."
       },
       {
         type: "input",
-        name: "Installation",
+        name: "installation",
         message: "Please provide a detailed walk-though on how to clone and install your application."
       },
       {
@@ -59,7 +54,7 @@ const questions = [
       },
       {
         type: "input",
-        name: "Credits",
+        name: "credits",
         message: "Please list your collaborators/team members. You should also include links to their GitHub profiles.",
       },
       {
@@ -67,16 +62,26 @@ const questions = [
         name: "contributors",
         message: "Please add guidelines to let users know how they can contribute to your project.",
       },
-
+      {
+        type: "input",
+        name: "questions",
+        message: "Please add any and all questions here",
+      },
 
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+
 }
 
 // function to initialize program
 function init() {
+    inquirer.prompt(questions).then((responses) => {
+        console.log("Creating Professional README.md File...");
+        writeToFile(".README.md", generateMarkdown({ ...responses }));
+      });
 
 }
 
