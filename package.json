@@ -1,12 +1,12 @@
 {
-  "name": "static-site",
+  "name": "Professional-README-Generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a tool that automates the creation of high-quality README files. With this tool, developers can easily generate a professional and well-organized README file that includes essential information about their project.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Jessica-Stephenson",
   "license": "ISC",
   "dependencies": {
     "inquirer": "^6.5.2"

@@ -2,8 +2,8 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  // Should add a badges to the licenses 
-  ${addBadge(data.license)}
+
+${addBadge(data.license)}
 
 
 ## Description
@@ -16,6 +16,7 @@ ${data.description}
 * [Deployed Page](#deployedPage)
 * [Installation](#installation)
 * [Testing](#testing)
+* [Usage](#usage)
 * [License](#license)
 * [Credits](#credits)
 * [Contributors](#contributors)
@@ -39,6 +40,9 @@ ${data.installation}
 ## Test
 ${data.test}
 
+## Usage
+${data.usage}
+
 ## License
 ${viewLicense(data.license)}
 
@@ -49,7 +53,7 @@ ${data.credits}
 ${data.contributors}
 
 ## Questions
-[GitHub Profile](https://github.com/${data.gitHub}/)
+[GitHub Profile](https://github.com/${data.gitHub}/) \n
 You can reach out to me at ${data.email}.
 `;
 }
@@ -57,9 +61,7 @@ You can reach out to me at ${data.email}.
 module.exports = generateMarkdown;
 
 
-// [GitHub Profile](https://github.com/${data.userName}/)  
-
-// this checks to see what license was selected and adds the appropriate badge
+// this checks to see what license was selected and adds the badge matching it 
 const addBadge = licenseOption => 
   licenseOption == 'MIT' ? `
   ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
@@ -101,7 +103,7 @@ const addBadge = licenseOption =>
 
 
 
-// code below checks to see what license was picked. The code will run and if statement and provide the open source material
+// code below checks to see what license was picked and supplies a link to the open source site.
 
 const viewLicense = licenseOption => 
 licenseOption == 'MIT' ? `
@@ -138,3 +140,6 @@ licenseOption == 'The Unlicense' ? `
 This application is covered by the The Unlicense License,  please view the terms and conditions [here](https://opensource.org/license/unlicense/)
 `:
 `Invalid license choice.`;
+
+
+
