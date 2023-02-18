@@ -1,13 +1,13 @@
-# undefined
+# Professional README Generator
 
 
 
-  Invalid license choice.
-  
+  ![MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+
 
 
 ## Description
-undefined
+This is a tool that automates the creation of high-quality README files. With this tool, developers can easily generate a professional and well-organized README file that includes essential information about their project.
 
 ## Table of Contents
 * [Features](#features)
@@ -23,36 +23,38 @@ undefined
 * [Questions](#questions)
 
 ## Features
-undefined
+Badges, Technologies
 
 ## Technologies Used
-undefined
+Javascript, Node
 
 ## Screenshot
-![alt-text](undefined)
+![alt-text](l)
 
 ## Deployed Page
-undefined
+n/a
 
 ## Installation
-undefined
+git@github.com:Jessie93/Professional-README-Generator.git
 
 ## Test
-undefined
+l
 
 ## Usage
-undefined
+l
 
 ## License
-Invalid license choice.
+
+This application is covered by the MIT License, please view the terms and condition [here](https://opensource.org/licenses/MIT)
+
 
 ## Credits
-undefined
+N/A
 
 ## Contributors
-undefined
+Users must contact the owner of the application in order to contribute to the project
 
 ## Questions
-[GitHub Profile](https://github.com/undefined/) 
+[GitHub Profile](https://github.com/jessie93/) 
 
-You can reach out to me at undefined.
+You can reach out to me at jessica.stephenson.developer@gmail.com.

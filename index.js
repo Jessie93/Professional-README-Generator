@@ -86,20 +86,11 @@ const questions = [
 ];
 
 
-// had to use a try..catch statement in order to have a console.log message 
-// The code in the try block is executed first, and if it throws an exception, the code in the catch block will be executed. (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
+// function to write README file
 function writeToFile(fileName, data) {
-  try {
-    fs.writeFileSync(path.join(process.cwd(), fileName), data);
-    console.log(`You have successfully generated ${fileName}`);
-  } catch (err) {
-    console.log(err);
-  }
-}
-module.exports = writeToFile;
-
-
-
+return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+    }
+    
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((responses) => {
