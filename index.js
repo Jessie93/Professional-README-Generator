@@ -36,11 +36,19 @@ const questions = [
         name: "deployedPage",
         message: "Please provide a link to your deployed site:"
       },
+
+ // installation - how to clone the repository and how to use it       
+      {
+        type: "input",
+        name: "gitClone",
+        message: "Please provide link to clone application:"
+      },
       {
         type: "input",
         name: "installation",
-        message: "Please provide a detailed walk-though on how to clone and install your application:"
+        message: "Please provide a details on how to open your application:"
       },
+    
       {
         type: "input",
         name: "test",
@@ -90,7 +98,7 @@ const questions = [
 function writeToFile(fileName, data) {
 return fs.writeFileSync(path.join(process.cwd(), fileName), data);
     }
-    
+
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((responses) => {

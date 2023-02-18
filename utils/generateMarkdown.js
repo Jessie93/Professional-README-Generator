@@ -26,6 +26,7 @@ ${data.description}
 ${data.features}
 
 ## Technologies Used
+This applications was created using \n
 ${data.technologiesUsed}
 
 ## Screenshot
@@ -35,7 +36,9 @@ ${data.technologiesUsed}
 ${data.deployedPage}
 
 ## Installation
-${data.installation}
+To run the application, follow these steps: \n
+* Clone the repository using the command git clone ${data.gitClone}\n
+* ${data.installation} 
 
 ## Test
 ${data.test}

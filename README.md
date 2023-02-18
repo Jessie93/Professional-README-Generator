@@ -23,10 +23,14 @@ This is a tool that automates the creation of high-quality README files. With th
 * [Questions](#questions)
 
 ## Features
-Badges, Technologies
+* Command-line application that accepts user input and turns it into a High-quality, professional README.md
+* Badge for the license chosen by the user displayed  near the top of the README
+* Notice added to the section of the README entitled "License" that explains which license the application is covered under
+* Links in the "Table of Contents" take the user to the corresponding section of the README.
 
 ## Technologies Used
-Javascript, Node
+* Javascript
+* Node
 
 ## Screenshot
 ![alt-text](l)
