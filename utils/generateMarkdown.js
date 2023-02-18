@@ -49,7 +49,8 @@ ${data.credits}
 ${data.contributors}
 
 ## Questions
-${data.questions}
+[GitHub Profile](https://github.com/${data.gitHub}/)
+You can reach out to me at ${data.email}.
 `;
 }
 
@@ -103,39 +104,37 @@ const addBadge = licenseOption =>
 // code below checks to see what license was picked. The code will run and if statement and provide the open source material
 
 const viewLicense = licenseOption => 
-  licenseOption == 'MIT' ? `
-    This application is covered by the MIT License, please view the terms and conditions https://opensource.org/licenses/MIT
-  ` :
-  licenseOption == 'Apache 2.0' ? `
-    This application is covered by the Apache 2.0 License,  please view the terms and conditions https://opensource.org/license/apache-2-0/
-  ` :
-  licenseOption == 'GNU General Public v3.0' ? `
-    This application is covered by the GNU General Public v3.0 License,  please view the terms and conditions https://opensource.org/license/gpl-3-0/
-  ` :
-  licenseOption == 'BSD 2-Clause' ? `
-    This application is covered by the BSD 2-Clause License,  please view the terms and conditions https://opensource.org/license/bsd-2-clause/
-  ` :
-  licenseOption == 'BSD 3-Clause' ? `
-    This application is covered by the BSD 3-Clause License,  please view the terms and conditions https://opensource.org/license/bsd-3-clause/
-  ` :
-  licenseOption == 'Boost' ? `
-    This application is covered by the Boost License,  please view the terms and conditions https://opensource.org/license/bsl1-0-html/
-  ` :
-  licenseOption == 'Eclipse Public' ? `
-  This application is covered by the Eclipse Public License,  please view the terms and conditions https://opensource.org/license/eclipse-1-0-php/
-  ` :
-  licenseChoice == 'GNU General' ? `
-  This application is covered by the GNU General License,  please view the terms and conditions https://opensource.org/license/gpl-1-0/
-  ` :
-  licenseOption == 'GNU Lesser' ? `
-  This application is covered by the GNU Lesser License,  please view the terms and conditions https://opensource.org/license/lgpl-3-0/
-  ` :
-  licenseOption == 'Mozilla' ? `
-  This application is covered by the Mozilla License,  please view the terms and conditions https://opensource.org/license/mpl-2-0/
-  ` :
-  licenseOption == 'The Unlicense' ? `
-  This application is covered by the The Unlicense License,  please view the terms and conditions https://opensource.org/license/unlicense/
-  ` :
-  `
-    Invalid license choice.
-  `;
+licenseOption == 'MIT' ? `
+This application is covered by the MIT License, please view the terms and condition [here](https://opensource.org/licenses/MIT)
+`:
+licenseOption == 'Apache 2.0' ? `
+This application is covered by the Apache 2.0 License,  please view the terms and conditions [here](https://opensource.org/license/apache-2-0/)
+`:
+licenseOption == 'GNU General Public v3.0' ? `
+This application is covered by the GNU General Public v3.0 License,  please view the terms and conditions [here](https://opensource.org/license/)gpl-3-0/
+`:
+licenseOption == 'BSD 2-Clause' ? `
+This application is covered by the BSD 2-Clause License,  please view the terms and conditions [here](https://opensource.org/license/bsd-2-clause/)
+`:
+licenseOption == 'BSD 3-Clause' ? `
+This application is covered by the BSD 3-Clause License,  please view the terms and conditions [here](https://opensource.org/license/bsd-3-clause/)
+`:
+licenseOption == 'Boost' ? `
+This application is covered by the Boost License,  please view the terms and conditions [here](https://opensource.org/license/bsl1-0-html/)
+`:
+licenseOption == 'Eclipse Public' ? `
+This application is covered by the Eclipse Public License,  please view the terms and conditions [here](https://opensource.org/license/)eclipse-1-0-php/
+`:
+licenseOption == 'GNU General' ? `
+This application is covered by the GNU General License,  please view the terms and conditions [here](https://opensource.org/license/gpl-1-0/)
+`:
+licenseOption == 'GNU Lesser' ? `
+This application is covered by the GNU Lesser License,  please view the terms and conditions [here](https://opensource.org/license/lgpl-3-0/)
+`:
+licenseOption == 'Mozilla' ? `
+This application is covered by the Mozilla License,  please view the terms and conditions [here](https://opensource.org/license/mpl-2-0/)
+`:
+licenseOption == 'The Unlicense' ? `
+This application is covered by the The Unlicense License,  please view the terms and conditions [here](https://opensource.org/license/unlicense/)
+`:
+`Invalid license choice.`;
