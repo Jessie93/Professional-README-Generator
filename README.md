@@ -12,13 +12,11 @@ This is a tool that automates the creation of high-quality README files. With th
 ## Table of Contents
 * [Features](#features)
 * [Technologies Used](#technologiesUsed)
-* [Screenshots](#screenshot)
-* [Deployed Page](#deployedPage)
+* [Demo](#demo)
 * [Installation](#installation)
 * [Testing](#testing)
 * [Usage](#usage)
 * [License](#license)
-* [Credits](#credits)
 * [Contributors](#contributors)
 * [Questions](#questions)
 
@@ -29,31 +27,34 @@ This is a tool that automates the creation of high-quality README files. With th
 * Links in the "Table of Contents" take the user to the corresponding section of the README.
 
 ## Technologies Used
+This applications was created using 
 * Javascript
 * Node
 
-## Screenshot
-![alt-text](l)
-
-## Deployed Page
-n/a
+## Demo
+Please watch the demo walk-through video 
+[Here](https://drive.google.com/file/d/1P-4a3oCBOZJSOo7HpKiURCRotJ-o-hvt/view?usp=sharing)
 
 ## Installation
-git@github.com:Jessie93/Professional-README-Generator.git
+To run the application, follow these steps: 
+
+* Clone the repository using the command 
+```bash 
+git clone git@github.com:Jessie93/Professional-README-Generator.git
+```
+* Download and install the latest version of Node
+* The application will be invoked by using the following command in the terminal:
+```bash
+node index.js
+```
 
 ## Test
-l
-
-## Usage
-l
+README should be created if everything is running smoothly.
 
 ## License
 
 This application is covered by the MIT License, please view the terms and condition [here](https://opensource.org/licenses/MIT)
 
-
-## Credits
-N/A
 
 ## Contributors
 Users must contact the owner of the application in order to contribute to the project
